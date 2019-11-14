@@ -7,22 +7,34 @@
     <link rel="stylesheet" href="/style/style.css">
     <title>kontakt</title>
 
-<nav class="navigation">
-    <ul>
-        <li>
-            <a href="/index.html">Start</a>
-        </li>
-        <li>
-            <a href="/pages/bio.html">Bio</a>
-        </li>
-        <li>
-            <a href="#">Contact</a>
-        </li>
-    </ul>
-</nav>
-
 </head>
 <body>
-    kontakt
+    <a href="/index.html"class="button">START</a>
+    <a href="/pages/bio.html" class="button">BIO</a>
+    <a href="/pages/contact.html" class="button">CONTACT</a>
+  <main>
+    <form class="contact.form" action="" method="POST">
+      <section class="input-container">
+        <label class="input-labels" for="name">Namn:</label>
+        <input type="text" id="name" name="userName" />
+      </section>
+      <section class="input-container">
+        <label class="input-labels" for="email">Email:</label>
+        <input type="email" id="email" name="userEmail" />
+      </section>
+      <section class="input-container">
+        <label class="input-labels" for="message">Meddelande:</label>
+        <textarea
+          name="userMessage"
+          id="message"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </section>
+      <section class="input-container">
+        <button class="input-button">Skickas</button>
+      </section>
+    </form>
+  </main>
 </body>
 </html>
